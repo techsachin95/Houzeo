@@ -1,23 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 :root{
   --primary-color:#FFFFFF;
 }
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
 }
 
+.poppins-regular{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: Regular;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.poppins-regular-difFont{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: Regular;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
 .poppins-medium {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
+  font-size: 12px;
+  font-style: Medium;
+  line-height: 100%;
+  letter-spacing: 0%;
+
 }
 
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-style: normal;
+  font-size: 18px;
+  font-style: SemiBold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0B5AA5;
 }
 
 
@@ -27,9 +52,689 @@
 
 
 
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  height: 74px;
+
+}
+
+
+nav a,
+nav .dropdown-toggle {
+  font-size: 14px;
+  color: #000000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
 
 
 
 
 
+.free-listing{
+width: 154px;height: 38px;opacity: 1;
+color: #FFFFFF;border-radius: 5px;border: none;
+background: linear-gradient(270deg, #0E5293 0%, #2876C1 97.2%);
+font-size: 14px;
+}
+
+.filter-section {
+  position: fixed;
+  top: 74px;left: 0;right: 0;
+  z-index: 999;
+  height: 80px;
+  max-width: 100%;
+  padding: 16px 24px 16px 24px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 10px rgba(152, 152, 152, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center; 
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 398px;
+  height: 48px;
+  padding: 0 8px 0 16px;
+  background-color: #f6f9fc; 
+  border: 2px solid #1565c0; 
+  border-radius: 500px;
+  position: relative;
+}
+
+.search-wrapper input {
+  flex: 1;    
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #000;
+}
+
+.clear-btn,
+.search-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-btn img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+}
+.search-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+.filter-btn-div{
+  display: flex;align-items: center;justify-content: space-between;
+  gap: 16px;flex-grow: 1;
+  height: 48px;
+  background-color: #FFFFFF;
+  padding: 14px 16px 14px 16px;
+}
+
+.filter-btn {
+  display: flex;align-items: center;justify-content: space-between;
+  flex-grow: 1;
+  height: 48px;
+  background-color: #FFFFFF;
+  padding: 14px 16px 14px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forsale{
+  width: 152px;
+  background-color: #faf3f3;
+  border: 1px solid #0B5AA5;
+  transition: all 0.3s ease; 
+}
+
+.filter-btn .price{
+  width: 154px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease, 
+}
+
+.filter-btn .BedsBaths{
+  width: 184px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease; 
+
+}
+
+.filter-btn .properttype{
+  width: 156px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease; 
+
+}
+
+.filter-btn .filter{
+  width: 101px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease; 
+
+}
+
+.filter-btn .save{
+  width: 124px;border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease; 
+
+}
+
+.filter-btn:hover{
+ border-color: #ec0027;
+ box-shadow: 0 0 0 4px rgba(11, 90, 165, 0.2); /* Optional: soft highlight */
+}
+
+
+
+
+.filter-section {
+  position: fixed;
+}
+.dropdown-menu {
+  display: none;
+  position: relative; /* Required for positioning under button */
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  padding: 8px 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+/* Dropdown menu items */
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+
+/* MAIN + CARD STYLES */
+main {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  margin-top: 154px; /* push below header + filter */
+}
+.map, .property-listing-container {
+  flex: 1;
+  min-width: 0;
+}
+.map img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+  object-fit: cover;
+}
+.property-listing-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.property-listing-head {
+  margin-bottom: 16px;
+}
+.property-listing-head p {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+}
+.property-listing-head-sub-Heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.property-listing-head-sub-Heading p{
+  font-size: 14px;color: rega(0,0,0,0.4);
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.property-listing-head-sub-Heading button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+/* .property-listing-head-sub-Heading button:hover {
+  border-color: #0B5AA5;
+  box-shadow: 0 0 0 4px rgba(11,90,165,0.2);
+} */
+
+.shortby{
+  display: flex;justify-content: center;align-items: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+.card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.card-head {
+  position: relative;
+  height: 200px;
+  background-image: url('./images/Image1.svg');
+  background-size: cover;
+  background-position: center;
+}
+.card-head-icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.no-of-days {
+  display: flex;justify-content: center;align-items: center;
+  background: #fff;
+  border-radius: 24px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.trgmns {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+.card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.house-view {
+  display: flex;
+  justify-content: space-between;
+}
+.houseForSale {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 24px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  background: green;
+  border-radius: 50%;
+}
+.eye-view {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+.house-details {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+.beds, .baths, .sqft {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.beds::before{ content: "4";color: #0B5AA5; font-weight: 600;}
+.beds::after{ content: "Beds";}
+.baths::before{ content: "3";color: #0B5AA5; font-weight: 600;}
+.baths::after{ content: "Baths";}
+.sqft::before{ content: "998";color: #0B5AA5; font-weight: 600;}
+.sqft::after{ content: "sqft";}
+.house-address {
+  font-size: 12px;
+  color: #333;
+}
+.hose-rented-by-co {
+  font-size: 11px;
+  color: #777;
+}
+.property-listing-footer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-icon:hover {
+  animation: pulse 0.6s ease-in-out infinite;
+}
+
+
+
+
+.card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px); /* optional: slight lift */
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* Tablet & Small Laptops */
+/* @media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    margin-top: 180px;
+    padding: 16px;
+  }
+  .map, .property-listing-container {
+    width: 100%;
+  }
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+} */
+
+/* Mobile */
+/* @media (max-width: 600px) {
+  main {
+    padding: 12px;
+    margin-top: 200px;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    border-radius: 12px;
+  }
+} */
+
+
+
+
+
+
+.profile{
+  display: none;
+}
+
+.hamberg{
+  display: none;
+}
+
+.mfilter{
+  display: none;
+}
+
+
+@media (max-width: 678px) {
+
+  nav,.contact,.free-listing,.map,.BedsBaths,.properttype,.filter{
+    display: none;
+  }
+
+  .hamberg,.mfilter{
+    display: block;
+  }
+  
+  .profile {
+    display: block;position: absolute;right: 5%;
+  }
+
+
+.search-wrapper {
+  width: 85%;
+}
+
+.mfilter{
+  position: fixed;right: 4%;
+}
+
+.filter-btn-div{
+  display: flex;justify-content: space-between;align-items: center;
+  padding: 0px;
+}
+
+.filter-section{
+  height: 140px;
+}
+
+.filter-btn{
+  width: 78px;height: 36px;
+}
+
+
+
+.forsale{
+  width: 30px;height: 36px;
+}
+.price{
+  width: 30px;height: 36px;
+}
+
+.save{
+  width: 20px;height: 36px;
+  border-radius: 500px;
+}
+
+
+.property-listing-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;top: 50px;
+}
+}
+
+
+@media (min-width: 678px) and (max-width:1250px) {
+
+  nav,.free-listing,.BedsBaths,.properttype,.mfilter,.profile{
+    display: none;
+  }
+
+  .hamberg,.forsale,.price,.BedsBaths,.properttype,.filter,.save{
+    display: block;
+  }
+  
+  .search-wrapper {
+  width: 100%;
+  }
+
+
+
+.filter-btn-div{
+  display: flex;justify-content: space-between;align-items: center;
+    
+
+}
+.filter-btn{
+  display: flex;justify-content: space-between;align-items: center;
+  padding: 0px;padding: 14px 16px 14px 16px;
+}
+
+.filter-section{
+  height: 140px;
+}
+
+.filter-btn{
+  width: 78px;height: 36px;
+}
+
+
+
+.forsale{
+  width: 96px;height: 36px;
+}
+.property-listing-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;top: 50px;
+}
+
+main {
+    display: flex;
+    gap: 24px;
+    padding: 0px 24px 0px 0px;
+    margin-top: 154px;
+}
+.property-listing-container{
+  margin-top: 1rem;
+}
+}
+
+
+@media (min-width:1250px) {
+main {
+    display: flex;
+    gap: 24px;
+    padding: 0px 24px 0px 0px;
+    margin-top: 125px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+.filter-section {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 65px;
+    max-width: 100%;
+    padding: 5px 10px 5px 10px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 10px rgba(152, 152, 152, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 35px;
+    padding: 0 8px 0 8px;
+    background-color: #f6f9fc;
+    border: 2px solid #1565c0;
+    border-radius: 500px;
+    position: relative;
+}
+
+.search-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 35px;
+    background-color: #FFFFFF;
+    padding: 8px 12px 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forsale {
+    width: 80px;
+    background-color: rgb(250, 243, 243);
+    border: 1px solid rgb(11, 90, 165);
+    transition: 0.3s;
+}
+
+.filter-btn .price{
+  width: 100px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease, 
+}
+
+.property-listing-container{
+  margin-top: .8rem;
+}
+
+}

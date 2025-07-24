@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Houzeo</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="hamberg">
+      <img src="./images/Hamberg.svg" alt="hamberg">
+    </div>
+    <div class="logo">
+      <img src="./images/Logo.svg" alt="logo" />
+    </div>
+    <div class="profile">
+      <img src="./images/Profile.svg" alt="profile">
+    </div>
+    <nav>
+      <ul>
+        <li class="dropdown ">
+          <button class="dropdown-toggle poppins-regular">
+            Product
+            <img src="./images/DropdownIcon.svg" alt="dropdown-arrow">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="poppins-regular">How Houzeo Works</a>
+        </li>
+        <li>
+          <a href="#" class="poppins-regular">Reviews</a>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown-toggle poppins-regular">
+            Buy
+            <img src="./images/DropdownIcon.svg" alt="dropdown-arrow">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown-toggle  poppins-regular">
+            Sell
+            <img src="./images/DropdownIcon.svg" alt="dropdown-arrow">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="poppins-regular">Pricing</a>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown-toggle poppins-regular">
+            Resources
+            <img src="./images/DropdownIcon.svg" alt="dropdown-arrow">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="poppins-regular">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="contact poppins-regular">
+      (844) 448-0110
+      <p style="font-size: 12px;">(9am to 6pm CST, Mon-Sat)</p>
+    </div>
+    <div><button class="free-listing poppins-medium">Start Free Listing</button></div>
+  </header>
+
+  <section class="filter-section">
+    <div class="search-wrapper">
+      <input type="text" id="location-input" placeholder="Austin, TX" />
+
+      <button type="button" class="clear-btn">
+        <img src="./images/CrossIcon.svg" alt="Clear" />
+      </button>
+
+      <button type="submit" class="search-btn">
+        <img src="./images/SearchIcon.svg" alt="Search" />
+      </button>
+      <div class="mfilter"><img src="./images/Mfilter.svg" alt="dropdown-arrow"></button></div>
+    </div>
+
+    <div class="filter-btn-div">
+      <button class="filter-btn forsale" data-dropdown="for-sale">For Sale <img src="./images/DropdownIcon.svg"
+          alt="dropdown-arrow"></button>
+      <button class="filter-btn price" data-dropdown="price">Price<img src="./images/DropdownIcon.svg"
+          alt="dropdown-arrow"></button>
+      <button class="filter-btn BedsBaths" data-dropdown="beds">Beds & Baths <img src="./images/DropdownIcon.svg"
+          alt="dropdown-arrow"></button>
+      <button class="filter-btn properttype" data-dropdown="property">Property Type <img src="./images/DropdownIcon.svg"
+          alt="dropdown-arrow"></button>
+      <button class="filter-btn filter"><img src="./images/FilterIcon.svg" alt="dropdown-arrow"> Filters</button>
+
+      <button class="filter-btn save"><img src="./images/Save.svg" alt="dropdown-arrow"> Saved</button>
+    </div>
+    <div class="dropdown-menu" id="for-sale">
+      <ul>
+        <li>For Sale</li>
+        <li>Sold</li>
+      </ul>
+    </div>
+
+    <div class="dropdown-menu" id="price">
+      <ul>
+        <li>Option 1</li>
+        <li>Option 2</li>
+      </ul>
+    </div>
+
+    <div class="dropdown-menu" id="beds">
+      <ul>
+        <li>Option 1</li>
+        <li>Option 2</li>
+      </ul>
+    </div>
+
+    <div class="dropdown-menu" id="property">
+      <ul>
+        <li>option 1</li>
+        <li>option 2</li>
+      </ul>
+    </div>
+  </section>
+
+  <main>
+    <div class="map">
+      <img src="./images/Map.svg" alt="Map">
+    </div>
+    <div class="property-listing-container">
+      <div class="property-listing-head">
+        <p class="poppins-semibold">Austin, TX real estate & homes for sale</p>
+        <div class="property-listing-head-sub-Heading">
+          <div>
+            <p>2,010 Homes</p>
+          </div>
+
+          <div class="shortby">
+            <div>Sort by:</div>
+            <button class="filter-btn Sort-by" data-dropdown="Sort-by">For Sale <img src="./images/DropdownIcon.svg"
+                alt="dropdown-arrow"></button>
+            <div class="dropdown-menu" id="new-list">
+              <ul>
+                <li>option 1</li>
+                <li>option 2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container"></div>
+      <div class="property-listing-footer poppins-regular-difFont">
+        Copyright: @ 2024 Houzeo.All rights reserved.
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
